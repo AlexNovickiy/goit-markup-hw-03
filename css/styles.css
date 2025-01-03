@@ -80,11 +80,8 @@ a.active-link:active {
     background: #404bbf;
 }
 
-.site-contact {
-    font-style: normal;
-}
-
 .link-contact {
+    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -205,6 +202,7 @@ img {
 
 .nav-logo-header {
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .nav-list-items {
@@ -244,7 +242,16 @@ img {
 
 
 .visually-hidden {
-    display: none;
+    position: absolute;         /* Видаляємо елемент із потоку документа */
+    width: 1px;                 /* Робимо його практично невидимим */
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;           /* Приховуємо вміст, якщо він виходить за межі */
+    clip: rect(0, 0, 0, 0);     /* Вирізаємо область для приховування */
+    white-space: nowrap;        /* Уникаємо перенесення тексту */
+    border: 0;
+        
 }
 
 .list-advantages  {
