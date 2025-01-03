@@ -171,49 +171,49 @@ a.active-link:active {
 
 img {
     display: block;
+    width: 100%;
+    object-fit: cover;
+
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1158px;
     margin: 0 auto;
-    padding-left: 156px;
-    padding-right: 156px;
 }
 
 .site-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
 }
 
 .container.flex-items {
     display: flex;
+    padding: 0 15px;
 }
 
-nav {
+.navigation {
     display: flex;
-}
-
-nav ul {
-    display: flex;
-}
-
-.site-contact ul {
-    display: flex;
-    
-}
-
-.nav-list-container {
-    margin-left: 76px;
+    align-items: center;
     margin-right: 332px;
 }
 
+.list-contacts {
+    display: flex;
+    gap: 40px; 
+    padding: 24px 0;
+    
+}
+
+.nav-logo-header {
+    margin-right: 76px;
+}
+
 .nav-list-items {
+    display: flex;
     gap: 40px;
 }
 
-.link-contact.mail {
-    margin-right: 40px;
+.nav-list-item {
+    padding: 24px 0;
 }
 
 .section {
@@ -227,32 +227,32 @@ nav ul {
 
 .title-button {
     display: block;
+    min-width: 169px;
+    height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
     margin: 0 auto;
+    border: none;
 }
 
 .main-title {
+    max-width: 496px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.container.hero-image {
-    padding-left: 472px;
-    padding-right: 472px;
-}
 
 
-.title-advantages {
+.visually-hidden {
     display: none;
 }
 
-.section-one ul  {
+.list-advantages  {
     display: flex;
     gap: 24px;
 }
 
-.section-one ul li {
+.item-advantages {
     flex-basis: calc((100% - 72px) / 4);
 } 
  
@@ -260,9 +260,13 @@ nav ul {
     margin-bottom: 8px;
 }
 
-.section-our-team ul {
+.list-person {
     display: flex;
     gap: 24px;
+}
+
+.list-person-card {
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 h2 {
@@ -274,7 +278,7 @@ h2 {
 }
 
 .card-content-team {
-    margin: 32px 16px;
+    padding: 32px 0;
 }
 
 .list-person-card {
@@ -282,15 +286,19 @@ h2 {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.section-our-portfolio ul {
+.list-portfolio {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px; 
 }
 
-.section-our-portfolio ul li {
+.item-portfolio {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.portfolio-item-title {
+    margin-bottom: 8px;
 }
 
 .card-content-portfolio {
@@ -304,8 +312,11 @@ h2 {
     padding: 100px 0;
 }
 
+.nav-logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .text-footer {
     width: 264px;
-    margin-top: 16px;
 }
