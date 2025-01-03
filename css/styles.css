@@ -202,7 +202,6 @@ img {
 
 .nav-logo-header {
     margin-right: 76px;
-    padding: 24px 0;
 }
 
 .nav-list-items {
@@ -210,7 +209,7 @@ img {
     gap: 40px;
 }
 
-.nav-list-item {
+.nav-link-header {
     padding: 24px 0;
 }
 
@@ -242,16 +241,16 @@ img {
 
 
 .visually-hidden {
-    position: absolute;         /* Видаляємо елемент із потоку документа */
-    width: 1px;                 /* Робимо його практично невидимим */
+    position: absolute;
+    width: 1px;
     height: 1px;
     margin: -1px;
-    padding: 0;
-    overflow: hidden;           /* Приховуємо вміст, якщо він виходить за межі */
-    clip: rect(0, 0, 0, 0);     /* Вирізаємо область для приховування */
-    white-space: nowrap;        /* Уникаємо перенесення тексту */
     border: 0;
-        
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list-advantages  {
