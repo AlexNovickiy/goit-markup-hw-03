@@ -14,27 +14,27 @@ ul, ol {
     padding-left: 0;
 }
 
-h2 {
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-text-transform: capitalize;
-color: #2e2f42;
+.heading-large {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
 
-h3 {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
+.subheading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
-p {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+.paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -83,9 +83,9 @@ a.active-link:active {
 .link-contact {
     font-style: normal;
     font-size: 16px;
+    color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
 
 .link-contact:hover,
@@ -261,7 +261,7 @@ img {
 .item-advantages {
     flex-basis: calc((100% - 72px) / 4);
 } 
- 
+
 .title-three-advantages {
     margin-bottom: 8px;
 }
